@@ -20,8 +20,8 @@ const personalMovieDB = {
 
 function remeberMyFilms(){
     for(let i = 0; i < 2;i++){
-        const lastMovie1 = prompt("Один из позледних просмотренних фильмов ?", "Terminator"),
-              rangeMovie1 = prompt("На сколько оцените его ?", "10.10");
+        const lastMovie1 = prompt("Один из позледних просмотренних фильмов ?", "Terminator").trim(),
+              rangeMovie1 = prompt("На сколько оцените его ?", "10.10").trim();
     
         if(lastMovie1 != null && rangeMovie1 != null && lastMovie1 != '' && rangeMovie1 != '' && lastMovie1.length < 50){
             personalMovieDB.movies[lastMovie1] = rangeMovie1;
